@@ -1,0 +1,62 @@
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-main *{
+    color: var(--text-color);
+}
+
+.navLogoWrapper {
+    flex: 1;
+}
+
+.navLogoWrapper img{
+    height: 8rem;
+}
+
+.navLinksWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.navLinksWrapper .navLink{
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+.navSearchWrapper {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    margin-right: 1rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navSearchWrapper div:first-of-type {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navSearchWrapper input {
+    padding: .5rem 2rem;
+    border-radius: 50rem;
+    outline: none;
+    color: var(--background-color);
+}
+
+.searchIcon {
+    position: absolute;
+    fill: black;
+    left: 1rem;
+}
+
+.shoppingCartIcon {
+    font-size: 1.5rem;
+}

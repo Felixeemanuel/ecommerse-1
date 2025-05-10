@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import HomePage from './pages/HomePage.jsx'
+import HomePage from './pages/HomePage/HomePage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
 import Error404Page from './pages/Error404Page.jsx'
 import {ProductsProvider} from './pages/useContext/context.jsx'
