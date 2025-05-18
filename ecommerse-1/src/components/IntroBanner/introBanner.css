@@ -38,7 +38,7 @@
 }
 
 .introBannerText h2{
-    color: var(--text-color);
+    color: var(--background-color);
     text-shadow: 3px 3px 7px black;
     font-size: 4rem;
     font-family: 'Outfit', sans-serif;

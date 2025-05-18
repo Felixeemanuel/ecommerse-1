@@ -1,0 +1,47 @@
+.categoryWrapper {
+    border: 1.5px solid var(--border-color);
+    height: min-content;
+    margin-left: 2rem;
+    padding: 1rem 0;
+    width: 250px;
+    border-radius: 1rem;
+}
+
+.categoryWrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+.categoryWrapper ul li {
+    font-size: 1.3rem;
+    background: linear-gradient(to right, rgb(36, 36, 36), var(--background-color));
+    padding-block: .5rem;
+    padding-left: .5rem;
+    cursor: pointer;
+    transition: all 100ms ease;
+}
+
+.active {
+    border-left: 3px solid var(--secondary-color) !important;
+
+}
+
+.categoryTitleWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    margin-left: .5rem;
+}
+
+.categoryIcon {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.categoryTitle {
+    font-weight: 600;
+}
+

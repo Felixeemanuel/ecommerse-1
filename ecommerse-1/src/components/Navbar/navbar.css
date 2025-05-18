@@ -3,13 +3,20 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 12vh;
+    padding-inline: 5rem;
+    border-bottom: 1.5px solid var(--border-color);
 }
 
-.nav-main *{
+.nav-main .navLink{
     color: var(--text-color);
 }
 
 .navLogoWrapper {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
     flex: 1;
 }
 
@@ -19,7 +26,13 @@
 
 .navLinksWrapper {
     display: flex;
+    gap: 5rem;
     justify-content: space-between;
+    border: 1.5px solid rgb(47, 47, 47);
+    height: 50%;
+    align-items: center;
+    padding-inline: 3rem;
+    border-radius: 5rem;
     flex: 1;
 }
 
@@ -27,15 +40,15 @@
     text-decoration: none;
     font-family: 'Outfit', sans-serif;
     font-weight: 400;
+    font-size: 1.2rem;
 }
 
 .navSearchWrapper {
     display: flex;
-    flex: 1;
     justify-content: end;
-    margin-right: 1rem;
     align-items: center;
     gap: 2rem;
+    flex: 1;
 }
 
 .navSearchWrapper div:first-of-type {
@@ -44,19 +57,13 @@
     align-items: center;
 }
 
-.navSearchWrapper input {
-    padding: .5rem 2rem;
-    border-radius: 50rem;
-    outline: none;
-    color: var(--background-color);
-}
 
-.searchIcon {
-    position: absolute;
-    fill: black;
-    left: 1rem;
-}
 
 .shoppingCartIcon {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    border: 2px solid rgb(47, 47, 47);
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: .3rem;
+    border-radius: .4rem;
 }

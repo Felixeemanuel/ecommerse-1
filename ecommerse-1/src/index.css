@@ -8,16 +8,17 @@ body {
     background-color: var(--background-color);
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Outfit', sans-serif;
+h1, h2, h3, h4, h5, h6, p, div {
+    font-family: 'Urbanist', sans-serif;
     color: var(--text-color);
 }
 
 :root {
-    --primary-button-color: #d6c5a8;
-    --background-color: #121212;
-    --secondary-color: #6C7A89;
-    --text-color: #F4F4F4;
+    --primary-button-color: rgb(214, 197, 168);
+    --background-color: #1a1a1a;
+    --secondary-color: #2b9389;
+    --text-color: #eaeaea;
     --error-color: #C26D5E;
     --button-hover-color: #A39171;
+    --border-color: rgb(47, 47, 47);
 }

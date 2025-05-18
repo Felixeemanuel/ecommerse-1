@@ -1,0 +1,40 @@
+.popular-products-banner {
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.popular-products-banner h1{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.react-multi-carousel-dot-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  .react-multi-carousel-dot-list li {
+    list-style: none;
+    margin: 0 1px;
+    height: 5px;
+    border-radius: 0;
+  }
+  .carousel-item {
+    padding-inline: .5rem;
+  }
+  
+  
+  /* .react-multi-carousel-dot button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #ccc;
+    transition: 0.3s ease;
+  } */
+  
+
