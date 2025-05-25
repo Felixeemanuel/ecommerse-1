@@ -21,6 +21,7 @@
     padding-left: .5rem;
     cursor: pointer;
     transition: all 100ms ease;
+    text-transform: capitalize;
 }
 
 .active {

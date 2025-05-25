@@ -15,7 +15,7 @@ const HomeCategoryFilter = ({ categories, selectedCategory, onSelectCategory }) 
         <ul>
             {categories.map(category => (
                 <li 
-                key={category.name} 
+                key={category} 
                 className={category === selectedCategory ? 'active' : ''} 
                 onClick={() => onSelectCategory(category)}>
                     {category}

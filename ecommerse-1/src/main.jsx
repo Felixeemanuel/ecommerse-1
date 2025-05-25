@@ -7,6 +7,7 @@ import AboutPage from './pages/AboutPage.jsx'
 import Error404Page from './pages/Error404Page.jsx'
 import {ProductsProvider} from './pages/useContext/context.jsx'
 import Layout from './Layout.jsx'
+import ProductDetails from './pages/ProductDetailsPage/ProductDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,13 +22,13 @@ const router = createBrowserRouter([
       {
         path: "/about", 
         element: <AboutPage />
+      },
+      {
+        path: "/products/:id",
+        element: <ProductDetails />,
       }
     ]
   },
-  {
-    path: '/about',
-    element: <AboutPage />,
-  }
 
 ])
 

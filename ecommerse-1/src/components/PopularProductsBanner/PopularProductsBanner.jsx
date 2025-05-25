@@ -3,6 +3,7 @@ import './popularProductsBanner.css'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import ProductCard from '../ProductCard/ProductCard';
+import { Link } from 'react-router-dom';
   
 const responsive = {
     superLargeDesktop: {
@@ -24,13 +25,13 @@ const responsive = {
   };
 
 const PopularProductsBanner = ({ products }) => {
-    console.log('felix', products)
   return (
     <div className="popular-products-banner">
       <h1>Popular Products</h1>
       {(!products || products.length === 0) ? (
         <p>Loading products...</p>
       ) : (
+
         <Carousel
           swipeable
           draggable
@@ -49,7 +50,9 @@ const PopularProductsBanner = ({ products }) => {
           itemClass="carousel-item"
         >
           {products.map((product) => (
+            <Link to={`/products/${product.id}`} key={product.id} style={{ textDecoration: 'none' }}>
             <ProductCard key={product.id} product={product} />
+            </Link>
           ))}
         </Carousel>
       )}
