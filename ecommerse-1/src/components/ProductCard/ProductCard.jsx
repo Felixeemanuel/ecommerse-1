@@ -1,7 +1,11 @@
 import React from 'react'
 import './productCard.css'
+import { Link } from 'react-router-dom'
+import { useCart } from '../../pages/useContext/cartContext'
 
 const ProductCard = ({ product, index }) => {
+
+  const { addToCart } = useCart()
 
   return (
     
@@ -15,7 +19,9 @@ const ProductCard = ({ product, index }) => {
                 <p>${product.price}</p>
                 <div className='productCardCategoryBox'>{product.category}</div>
               </div>
-                <button className='addToCartButton'>Add To Cart</button>
+              <Link to={`/cart`} className='productCardLink'>
+                <button onClick={() => addToCart(product)} className='addToCartButton'>Add To Cart</button>
+              </Link>
             </div>
         </div>
   )

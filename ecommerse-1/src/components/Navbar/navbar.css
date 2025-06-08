@@ -67,3 +67,25 @@
     padding: .3rem;
     border-radius: .4rem;
 }
+
+.navCartWrapper {
+    position: relative;
+    text-decoration: none;
+}
+
+.cartCount {
+    position: absolute;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    top: -15px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navCartLink {
+    text-decoration: none;
+}

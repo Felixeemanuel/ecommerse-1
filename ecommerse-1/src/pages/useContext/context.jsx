@@ -22,7 +22,7 @@ export function ProductsProvider({children}) {
             try {
                 setLoading(true);
     
-                const categories = ['smartphones', 'laptops', 'fragrances', 'home-decoration', 'skin-care']; // Add more categories here
+                const categories = ['laptops', 'fragrances', 'home-decoration', 'skin-care'];
                 const allProducts = [];
     
                 for (const category of categories) {
@@ -43,12 +43,6 @@ export function ProductsProvider({children}) {
         };
         fetchProducts();
     }, []);
-
-    useEffect(() => {
-        fetch('https://dummyjson.com/products/categories')
-.then(res => res.json())
-.then(console.log);
-    })
 
 
     return (

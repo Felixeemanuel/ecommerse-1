@@ -28,7 +28,7 @@ const HomePage = () => {
           product.title.toLowerCase().includes(searchQuery.toLowerCase())
           );
 
-          console.log('filteredProducts', filteredProducts)
+          // console.log('filteredProducts', filteredProducts)
 
           
 

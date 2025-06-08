@@ -25,6 +25,8 @@
   }
   .carousel-item {
     padding-inline: .5rem;
+    height: max-content;
+    width: min-content;
   }
   
   

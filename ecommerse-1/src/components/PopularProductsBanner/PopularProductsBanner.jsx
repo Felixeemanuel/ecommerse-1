@@ -12,7 +12,7 @@ const responsive = {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4
+      items: 3
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -25,6 +25,7 @@ const responsive = {
   };
 
 const PopularProductsBanner = ({ products }) => {
+  console.log('products in PopularProductsBanner:', products);
   return (
     <div className="popular-products-banner">
       <h1>Popular Products</h1>
@@ -39,8 +40,8 @@ const PopularProductsBanner = ({ products }) => {
           responsive={responsive}
           ssr
           infinite
-          autoPlay={false}
-          // autoPlaySpeed={3000}
+          autoPlay={true}
+          autoPlaySpeed={3000}
           keyBoardControl
           customTransition="transform 300ms ease-in-out"
           transitionDuration={500}
@@ -49,9 +50,9 @@ const PopularProductsBanner = ({ products }) => {
           dotListClass='react-multi-carousel-dot-list'
           itemClass="carousel-item"
         >
-          {products.map((product) => (
+          {products.filter(product => product.rating > 4).map(product => (
             <Link to={`/products/${product.id}`} key={product.id} style={{ textDecoration: 'none' }}>
-            <ProductCard key={product.id} product={product} />
+              <ProductCard key={product.id} product={product} />
             </Link>
           ))}
         </Carousel>

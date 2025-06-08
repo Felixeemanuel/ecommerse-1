@@ -1,0 +1,43 @@
+.checkoutWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 3rem auto;
+
+}
+
+.formPartOne {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.formPartTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: .3rem;
+}
+
+.checkoutFormsWrapper {
+    width: 100%;
+    flex: 2;
+}
+
+.checkoutSummaryWrapper {
+    flex: 1;
+    width: 100%;
+    border: 1px solid white;
+}
+.checkoutSummaryInnerWrapper {
+    margin: 1rem;
+    border: 1px solid var(--border-color);
+    height: fit-content;
+}
