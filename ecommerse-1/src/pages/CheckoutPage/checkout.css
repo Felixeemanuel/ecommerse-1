@@ -7,11 +7,21 @@
 
 }
 
+.formWrapper {
+    /* border: 1px solid white; */
+}
+
 .formPartOne {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
+
+.formPartOne h2 {
+    margin-top: 2rem;
+    width: 80%;
+}
+
 .formPartTwo {
     display: flex;
     flex-direction: column;
@@ -24,6 +34,24 @@
     flex-direction: column;
     width: 70%;
     gap: .3rem;
+}
+
+.formGroup input:focus {
+    outline: 0px;
+    border: 0px;
+}
+
+.formGroup input, .formGroup select {
+    font-size: 1rem;
+    padding-block: .5rem;
+    padding-inline: .3rem;
+    border-radius: .5rem;
+    outline: 0;
+    border: 0;
+}
+
+.formGroup label {
+    font-weight: bold;
 }
 
 .checkoutFormsWrapper {
@@ -40,4 +68,21 @@
     margin: 1rem;
     border: 1px solid var(--border-color);
     height: fit-content;
+}
+
+.error {
+    color: rgb(235, 66, 66);
+}
+
+.submitButton {
+    color: white;
+    background-color: var(--secondary-color);
+    padding: .5rem 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.submitButton:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
 }
